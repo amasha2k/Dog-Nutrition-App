@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-16dp"
+    android:background="@drawable/im4"
+    tools:layout_editor_absoluteY="145dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/editTextProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Description"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
+
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="49dp"
+            android:backgroundTint="#FF9800"
+            android:text="Select Image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductPrice" />
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="191dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductPrice" />
+
+        <Button
+            android:id="@+id/buttonAddProduct"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF9800"
+            android:text="Add Product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="409dp"
+            android:layout_height="35dp"
+            android:background="#3F51B5"
+            android:backgroundTint="#009688"
+            android:text="Manage Products"
+            android:textAlignment="center"
+            android:textColor="#FFFEFE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:hint="Product Name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Product Price"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerProductCategory" />
+
+        <Spinner
+            android:id="@+id/spinnerProductCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F3F3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductDescription" />
+
+        <EditText
+            android:id="@+id/editTextProductID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:hint="Enter Product ID"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAddProduct" />
+
+        <Button
+            android:id="@+id/buttonFindProduct"
+            android:layout_width="216dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="88dp"
+            android:backgroundTint="#FF9800"
+            android:text="Find Product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductID" />
+
+        <Button
+            android:id="@+id/buttonUpdateProduct"
+            android:layout_width="216dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:backgroundTint="#FF9800"
+            android:text="Update Product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFindProduct" />
+
+        <Button
+            android:id="@+id/buttonDeleteProduct"
+            android:layout_width="216dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:backgroundTint="#FF9800"
+            android:text="Delete Product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonUpdateProduct" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

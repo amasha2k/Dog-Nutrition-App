@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dog Nutrition App</string>
+    <string-array name="product_categories">
+        <item>Food</item>
+        <item>Nutrition</item>
+        <item>Other</item>
+    </string-array>
+</resources>
